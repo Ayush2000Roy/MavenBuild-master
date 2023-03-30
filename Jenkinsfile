@@ -4,7 +4,7 @@ node('') {
 	}
 	
 	stage ('Build'){
-		sh "mvn clean install -Dmaven.test.skip=true"
+		bat "mvn clean install -Dmaven.test.skip=true"
 	}
 
 	stage ('Test Cases Execution'){
